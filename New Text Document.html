@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chúc Mừng Sinh Nhật Em Yêu 💖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(circle at top, #ffe0e6, #ffc3c3);
+      font-family: 'Pacifico', cursive;
+      text-align: center;
+      color: #d63384;
+      overflow-y: auto;
+    }
+    h1 {
+      margin-top: 0px;
+      font-size: 2.5em;
+      max-width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      animation: fadeInUp 2s ease-out;
+    }
+    .subtext {
+      font-size: 1.3em;
+      margin-top: -10px;
+      color: #ff69b4;
+      animation: blink 1s infinite;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+    p {
+      font-size: 1.3em;
+      margin: 30px auto;
+      max-width: 750px;
+      animation: fadeInUp 2.5s ease-out;
+      animation-delay: 1s;
+      animation-fill-mode: both;
+    }
+    .slideshow-container {
+      position: relative;
+      max-width: 500px;
+      margin: 30px auto;
+    }
+    .mySlides {
+      display: none;
+      animation: fade-in 1s ease-in-out;
+    }
+    @keyframes fade-in {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .slideshow-container img {
+      width: 50%;
+      max-width: 60%;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+    audio {
+      display: none;
+    }
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .heart {
+      width: 20px;
+      height: 20px;
+      position: fixed;
+      background-color: red;
+      transform: rotate(45deg);
+      animation: floatUp 4s linear forwards;
+      z-index: 9999;
+    }
+    .heart::before,
+    .heart::after {
+      content: '';
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      background-color: red;
+      border-radius: 50%;
+    }
+    .heart::before {
+      top: -10px;
+      left: 0;
+    }
+    .heart::after {
+      left: -10px;
+      top: 0;
+    }
+    @keyframes floatUp {
+      0% {
+        opacity: 1;
+        transform: translateY(0) scale(1) rotate(45deg);
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(-300px) scale(1.5) rotate(45deg);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<canvas id="fireworks"></canvas>
+
+<audio autoplay loop>
+  <source src="1.mp3" type="audio/mp3">
+</audio>
+
+<h1>Chúc Mừng Sinh Nhật bé My Yêu dấu 💕</h1>
+<div class="subtext">Happy Birthday To You 🎶</div>
+
+<p style="text-align: justify;">
+  Hôm nay là sinh nhật của bé My yêu dấu nè 😘, một thiên thần đã xuất hiện trên đời 🥰
+  Bé Huyền em mãi luôn xinh đẹp, bae là người đẹp nhất với anh luôn á ahihi. Bae, phải luôn tươi cười, luôn hạnh phúc và thật khỏe mạnh nhan 💖 Bae luôn luôn đáng yêu, luôn luôn là người anh yêu quý nhất. Được ở bên cạnh và chăm sóc em luôn luôn là ước mơ lớn của anh. Ich liebe dich so sehrr! Anh gửi một triệu nụ hôn đến bên em. Chắc bây h em bất ngờ lắm chứ gì haha
+</p>
+
+<div class="slideshow-container" id="slideshow">
+  <!-- Ví dụ ảnh, bạn thay bằng ảnh của bạn -->
+  <div class="mySlides"><img src="z6602910610895_ee4c8cddac5e5356664f910045a57ab8.jpg" alt=""></div>
+    <div class="mySlides"><img src="z6602910621926_4037bb8f18565ad9de40ac3a12e45fec.jpg" alt=""></div>
+    <div class="mySlides"><img src="z6602910627529_a9064d04e236488fd731b8a7f9a6cd7f.jpg" alt=""></div>
+    <div class="mySlides"><img src="z6602910641141_95731d56ef3bd812f750eb8dad25506e.jpg" alt=""></div>
+    <div class="mySlides"><img src="z6602910642120_8527799a1ef81f442000b8cf4b5b14a9.jpg" alt=""></div>
+    <div class="mySlides"><img src="z6602910654598_f4e46b72209c1a4a2b5df2f44c2d8e12.jpg" alt=""></div>
+    <div class="mySlides"><img src="z6602910669245_975164fdf40bc18f6551219ace59e2c6.jpg" alt=""></div>
+    <div class="mySlides"><img src="z6602910670262_6fdcdc730e22d6863bea56e4a3143981.jpg" alt=""></div>
+    <div class="mySlides"><img src="z6602910680464_49e3f2a7f83b315ad11016f6229f5494.jpg" alt=""></div>
+    <div class="mySlides"><img src="z6602910681657_f2e1a546ffc0ed27725ebf8f47a8d814.jpg" alt=""></div>
+    <div class="mySlides"><img src="z6602910689900_0f644e83fad1127358bb571ec3a6852b.jpg" alt=""></div>
+    <div class="mySlides"><img src="z6602910696002_ef7520d5929a08784d2b0665328f4e6c.jpg" alt=""></div>
+    <div class="mySlides"><img src="z6602910710965_8f5b5d6809c24a0f05d69555efa9dd78.jpg" alt=""></div>
+    <div class="mySlides"><img src="z6602910720113_4e1c2e5d294ca034e978dc09058eea94.jpg" alt=""></div>
+    <div class="mySlides"><img src="z6602910722691_80203258fe7a28eab36fa9753581a63b.jpg" alt=""></div>
+    <div class="mySlides"><img src="z6602910734071_1b1a79740c4166d0d2e6251c302377fc.jpg" alt=""></div>
+    <div class="mySlides"><img src="z6602910736326_42876a63394e569396988206462aa5fb.jpg" alt=""></div>
+    <div class="mySlides"><img src="z6602910746888_a33dcfcc3cd3a55d7f9791c75c7ab96b.jpg" alt=""></div>
+    <div class="mySlides"><img src="z6602910758700_7ef10fbe4fc99a444c1182d14cbf2004.jpg" alt=""></div>
+    <div class="mySlides"><img src="z6602910758988_f8e2fb7716d46f4963edbc086c53924c.jpg" alt=""></div>
+    <div class="mySlides"><img src="z6602910772336_e9376d87a24bb6baeaa094d943c4bcd9.jpg" alt=""></div>
+    <div class="mySlides"><img src="z6602910778059_08a78153b18dca4b8f5c897038cc8f7b.jpg" alt=""></div>
+    <div class="mySlides"><img src="z6602910784312_7d74ef3295c10bc5cba89811407938f3.jpg" alt=""></div>
+    <div class="mySlides"><img src="z6602910797437_9cf03c87f834d1d723707c7c29ef29be.jpg" alt=""></div>
+    <div class="mySlides"><img src="z6602910798345_316e33116e8e948fbd49678aa32d987f.jpg" alt=""></div>
+    <div class="mySlides"><img src="z6602910813794_2724f05fd623ae4b2430f3466a94d29e.jpg" alt=""></div>
+    <div class="mySlides"><img src="z6602910815159_c937702ba773ffd4a73b712aa62a834c.jpg" alt=""></div>
+    <div class="mySlides"><img src="z6602910827804_36147e86a8f2a7a43f7a62c13d627dca.jpg" alt=""></div>
+    <div class="mySlides"><img src="z6602910837585_a9d33b1a1f7553a689e8799a5d8721f3.jpg" alt=""></div>
+    <div class="mySlides"><img src="z6602910838475_f1a431dcb5c021cab4016096bdbd8378.jpg" alt=""></div>
+    <div class="mySlides"><img src="z6602910851454_f552f61cd6590b22874e08ce195a7d4f.jpg" alt=""></div>
+    <div class="mySlides"><img src="z6602910853205_39e316c3729c54f8bcdc8c61a3227097.jpg" alt=""></div>
+    <div class="mySlides"><img src="z6602910865060_38443ae119d686fc41c5d9304afa94f4.jpg" alt=""></div>
+    <div class="mySlides"><img src="z6602910877721_2049728427df9e5e406f6656dc219fef.jpg" alt=""></div>
+    <div class="mySlides"><img src="z6602910886284_ef0bbf4bddc3063214f3098e888bb397.jpg" alt=""></div>
+</div>
+
+<script>
+  // PHÁO HOA
+  const canvas = document.getElementById('fireworks');
+  const ctx = canvas.getContext('2d');
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  let particles = [];
+
+  function random(min, max) {
+    return Math.random() * (max - min) + min;
+  }
+
+  function createFirework() {
+    const x = random(100, canvas.width - 100);
+    const y = random(100, canvas.height / 2);
+    const count = 50 + Math.floor(random(0, 30));
+    for (let i = 0; i < count; i++) {
+      particles.push({
+        x: x,
+        y: y,
+        radius: 2,
+        color: `hsl(${random(0, 360)}, 100%, 70%)`,
+        angle: random(0, Math.PI * 2),
+        speed: random(1, 5),
+        alpha: 1
+      });
+    }
+  }
+
+  function drawParticles() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    for (let i = particles.length - 1; i >= 0; i--) {
+      let p = particles[i];
+      p.x += Math.cos(p.angle) * p.speed;
+      p.y += Math.sin(p.angle) * p.speed;
+      p.alpha -= 0.01;
+      if (p.alpha <= 0) {
+        particles.splice(i, 1);
+        continue;
+      }
+      ctx.globalAlpha = p.alpha;
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+      ctx.fillStyle = p.color;
+      ctx.fill();
+    }
+    ctx.globalAlpha = 1;
+  }
+
+  function animate() {
+    drawParticles();
+    requestAnimationFrame(animate);
+  }
+
+  setInterval(createFirework, 1500);
+  animate();
+
+  window.addEventListener("resize", () => {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  });
+
+  // TRÁI TIM BAY
+  function createHeart() {
+    const heart = document.createElement("div");
+    heart.className = "heart";
+    heart.style.left = Math.random() * window.innerWidth + "px";
+    heart.style.bottom = "0px";
+    document.body.appendChild(heart);
+    setTimeout(() => {
+      heart.remove();
+    }, 4000);
+  }
+
+  setInterval(createHeart, 300);
+
+  // SLIDESHOW
+  let slideIndex = 0;
+  let slides = document.getElementsByClassName("mySlides");
+
+  function showSlides() {
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+      slideIndex = 1;
+    }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 3000);
+  }
+
+  showSlides();
+</script>
+
+</body>
+</html>
